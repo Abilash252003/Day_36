@@ -1,0 +1,14 @@
+///100 days of RTL///
+
+///Abilash P///
+
+///4-bit Even parity Generator in gate flow modeling///
+
+module bit_4_even_parity_gen (A, Y);
+
+input  [3:0]A;
+output Y;
+
+xor x1 (Y, A[3], A[2], A[1], A[0]);
+
+endmodule
